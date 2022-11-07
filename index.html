@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Swiper demo</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: rgb(30, 101, 134);
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+    
+        background: rgb(30, 101, 134);
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .swiper-slide:nth-child(1){
+      background-image: url("dennis-stein-CNRAazFNTBc-unsplash.jpg");
+      background-repeat: no-repeat;
+      background-size:100%;
+      
+      }
+      .swiper-slide:nth-child(2){
+     
+      background-repeat: no-repeat;
+    
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       
+      }
+      h2{
+      
+      
+      color:#fff;
+      font-weight: 700;
+      font-size: 3rem;
+      position: absolute;
+      left: 12rem;
+      top:25rem;}
+    </style>
+  </head>
+
+  <body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+        <div class="image-div"><img src="dennis-stein-CNRAazFNTBc-unsplash.jpg" alt=""></div><h2>Natasha</h2></div>
+        <div class="swiper-slide"><div class="image-div">
+        <img src="aloha-risha-boyuN2ro2fE-unsplash.jpg" alt=""></div><h2>Alisha</h2></div>
+        <div class="swiper-slide"><div class="image-div"><img src="joshua-thomas-eLc3-OoLuEU-unsplash.jpg" alt=""></div><h2>Joshua</h2></div>
+        <div class="swiper-slide"><div class="image-div"><img src="simeon-asenov-HH-_LF9yuM8-unsplash.jpg" alt=""></div><h2>Red Velvet</h2></div>
+        <div class="swiper-slide"><div class="image-div"> <img src="frank-weichelt-B6JqqES9bAE-unsplash.jpg" alt=""></div><h2>Cool Hangs</h2></div>
+        <div class="swiper-slide"><div class="image-div"><img src="mehdi-el-marouazi-lawMJClHSig-unsplash.jpg" alt=""></div><h2>Mendi</h2></div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
